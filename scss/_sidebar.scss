@@ -1,0 +1,137 @@
+@use './utils' as *;
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: hsl(var(--base));
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    overflow-y: auto;
+    z-index: 999;
+
+    &[data-enabled] {
+        display: block;
+    }
+
+    @include min-screen(lg) {
+        display: block;
+        width: 18rem;
+        min-width: 18rem;
+        position: relative;
+        z-index: auto;
+    }
+
+    &__mobile-header {
+        @include flex($content: end);
+
+        width: 100%;
+        padding: 1rem;
+        background-color: hsl(var(--base) / 0.85);
+
+        position: sticky;
+        top: 0;
+
+        z-index: 1;
+
+        @include min-screen(lg) {
+            display: none;
+        }
+
+        &__close-sidebar-btn {
+            cursor: pointer;
+
+            .icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__filters {
+        @include flex($direction: column, $gap: 1rem 0);
+        padding: 1rem;
+
+        &__title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: hsl(var(--primary));
+        }
+
+        &__list {
+            @include flex($direction: column, $gap: 1rem 0);
+        }
+
+        &__item {
+            @include flex($direction: column, $gap: 0.5rem 0);
+
+            &__name {
+                font-weight: 600;
+                color: hsl(var(--base-foreground) / 0.85);
+            }
+
+            &--price-filter {
+                .price-range {
+                    @include flex($items: center, $gap: 0 0.5rem);
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                        padding: 0.5rem;
+                        border-radius: 0.25rem;
+                        border: 1px solid hsl(var(--primary));
+                    }
+                }
+            }
+
+            &--brand-filter {
+                @include flex($direction: column, $gap: 0.5rem 0);
+
+                .search-bar {
+                    @include flex($items: center);
+
+                    border-radius: 0.25rem;
+                    border: 1px solid hsl(var(--primary));
+
+                    button {
+                        padding: 0.5rem;
+
+                        .icon {
+                            color: hsl(var(--placeholder));
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 2rem;
+                    }
+                }
+
+                .brand-list {
+                    @include flex($direction: column, $gap: 0.25rem 0);
+
+                    .brand {
+                        @include flex($items: center, $gap: 0 0.25rem);
+                    }
+                }
+
+                .expand-brand-list-btn {
+                    cursor: pointer;
+                    color: hsl(var(--primary));
+                }
+            }
+
+            &--type-filter {
+                .type-list {
+                    @include flex($direction: column, $gap: 0.25rem 0);
+
+                    .car-type {
+                        @include flex($items: center, $gap: 0 0.25rem);
+                    }
+                }
+            }
+        }
+    }
+}

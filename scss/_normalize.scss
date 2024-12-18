@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+:host {
+    tab-size: 4;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button,
+input,
+select {
+    border: none;
+    outline: none;
+    display: inline-flex;
+    color: inherit;
+    background-color: transparent;
+    font-size: 100%;
+    font-family: inherit;
+    letter-spacing: inherit;
+    opacity: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.icon {
+    color: inherit;
+    font-size: inherit;
+    display: inline-flex;
+    vertical-align: middle;
+}

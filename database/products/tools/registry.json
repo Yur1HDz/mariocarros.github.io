@@ -1,0 +1,12 @@
+[
+    {
+        "image": "../assets/images/products/tools/kit.jpg",
+        "name": "Kit Estepe",
+        "price": "R$ 155"
+    },
+    {
+        "image": "../assets/images/products/tools/hydraulic_jack.jpg",
+        "name": "Mini Macaco Hidraulico",
+        "price": "R$ 199"
+    }
+]

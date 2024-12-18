@@ -1,0 +1,112 @@
+[
+    {
+        "type": "classic",
+        "image": "../assets/images/products/cars/fusca.jpg",
+        "name": "Fusca Volkswagen Type 1",
+        "price": "R$ 32.000",
+        "year": [
+            1958,
+            1958
+        ]
+    },
+    {
+        "type": "classic",
+        "image": "../assets/images/products/cars/opala_ss.jpg",
+        "name": "Opala SS",
+        "price": "R$ 150.000",
+        "year": [
+            1974,
+            1974
+        ]
+    },
+    {
+        "type": "classic",
+        "image": "../assets/images/products/cars/kombi.jpg",
+        "name": "Volkswagen Kombi Standard",
+        "price": "R$ 110.800",
+        "year": [
+            1975,
+            1975
+        ]
+    },
+    {
+        "type": "classic",
+        "image": "../assets/images/products/cars/impala.jpg",
+        "name": "Impala 1967",
+        "price": "R$ 850.000",
+        "year": [
+            1967,
+            1967
+        ]
+    },
+    {
+        "type": "old",
+        "image": "../assets/images/products/cars/fiat_uno.jpg",
+        "name": "FIAT UNO FIRE ECONOMY",
+        "price": "R$ 34.900",
+        "year": [
+            2013,
+            2013
+        ]
+    },
+    {
+        "type": "old",
+        "image": "../assets/images/products/cars/palio.jpg",
+        "name": "FIAT PALIO ELX",
+        "price": "R$ 17.990",
+        "year": [
+            2005,
+            2005
+        ]
+    },
+    {
+        "type": "sports",
+        "image": "../assets/images/products/cars/bmw.jpg",
+        "name": "BMW 420i",
+        "price": "R$ 464.700",
+        "year": [
+            2024,
+            2025
+        ]
+    },
+    {
+        "type": "sports",
+        "image": "../assets/images/products/cars/ford_mustang.jpg",
+        "name": "MUSTANG MACH",
+        "price": "R$ 499.990",
+        "year": [
+            2022,
+            2022
+        ]
+    },
+    {
+        "type": "sports",
+        "image": "../assets/images/products/cars/corvette.jpg",
+        "name": "Chevrolet Corvette",
+        "price": "R$ 399.900",
+        "year": [
+            2008,
+            2008
+        ]
+    },
+    {
+        "type": "sports",
+        "image": "../assets/images/products/cars/sandero.jpg",
+        "name": "RENAULT SANDERO",
+        "price": "R$ 57.900",
+        "year": [
+            2016,
+            2017
+        ]
+    },
+    {
+        "type": "electric",
+        "image": "../assets/images/products/cars/cybertruck.jpg",
+        "name": "TESLA CYBERTRUCK",
+        "price": "R$ 1.305.000",
+        "year": [
+            2024,
+            2024
+        ]
+    }
+]

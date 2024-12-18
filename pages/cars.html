@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Website Icon -->
+        <link rel="icon" type="image/png" href="../assets/images/logo/icon.jpg" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tabler Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/index.css" />
+        <!-- Título -->
+        <title>Marios Carros</title>
+    </head>
+    <body>
+        <header class="navbar-wrapper">
+            <nav class="navbar">
+                <ul class="navbar__group-list">
+                    <li class="navbar__group">
+                        <a href="../index.html" class="navbar__logotipo">
+                            <img src="../assets/images/logotipo/icon.jpg" alt="Logo da Loja" />
+                            <p>Mario Carros</p>
+                        </a>
+                    </li>
+                    <li class="navbar__group">
+                        <ul class="navbar__category-list">
+                            <li class="navbar__category">
+                                <a href="./cars.html">Carros</a>
+                            </li>
+                            <li class="navbar__category">
+                                <a href="./components.html">Componentes</a>
+                            </li>
+                            <li class="navbar__category">
+                                <a href="./tools.html">Ferramentas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__group">
+                        <ul class="navbar__action-list">
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Favoritos">
+                                    <i class="ti ti-heart icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Carrinho">
+                                    <i class="ti ti-shopping-cart icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Conta">
+                                    <i class="ti ti-user icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Contato">
+                                    <i class="ti ti-phone icon"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__group navbar__group--mobile">
+                        <button class="navbar__open-mobile-navigation-btn">
+                            <i class="ti ti-menu-2 icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div role="navigation" class="mobile-navigation">
+            <div class="mobile-navigation__header">
+                <div class="mobile-navigation__logotipo">
+                    <img src="../assets/images/logotipo/icon.jpg" alt="Logo da Loja" />
+                    <p>Mario Carros</p>
+                </div>
+                <button class="mobile-navigation__close-btn">
+                    <i class="ti ti-x icon"></i>
+                </button>
+            </div>
+            <ul class="mobile-navigation__section-list">
+                <li class="mobile-navigation__section">
+                    <p class="mobile-navigation__section__title">Categorias</p>
+                    <ul class="mobile-navigation__section__list">
+                        <li class="mobile-navigation__section__item">
+                            <a href="./cars.html">
+                                <i class="ti ti-car icon"></i>
+                                Carros
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="./components.html">
+                                <i class="ti ti-engine icon"></i>
+                                Componentes
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="./components.html">
+                                <i class="ti ti-tool icon"></i>
+                                Ferramentas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-navigation__section">
+                    <p class="mobile-navigation__section__title">Cliente</p>
+                    <ul class="mobile-navigation__action-list">
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-heart icon"></i>
+                                Favoritos
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-shopping-cart icon"></i>
+                                Carrinho
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-user icon"></i>
+                                Conta
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-phone icon"></i>
+                                Contanto
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="products-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar__mobile-header">
+                    <button class="sidebar__mobile-header__close-sidebar-btn">
+                        <i class="ti ti-x icon"></i>
+                    </button>
+                </div>
+                <div class="sidebar__filters">
+                    <p class="sidebar__filters__title">Filtros</p>
+                    <ul class="sidebar__filters__list">
+                        <li class="sidebar__filters__item sidebar__filters__item--price-filter">
+                            <p class="sidebar__filters__item__name">Preço</p>
+                            <div class="sidebar__filters__item__content price-range">
+                                <input type="number" min="0" max="5000" placeholder="Mínimo" />
+                                <input type="number" min="5000" max="10000" placeholder="Máximo" />
+                            </div>
+                        </li>
+                        <li class="sidebar__filters__item sidebar__filters__item--brand-filter">
+                            <p class="sidebar__filters__item__name">Marcas</p>
+                            <div class="sidebar__filters__item__content search-bar">
+                                <div role="tooltip" class="tooltip" data-content="Buscar">
+                                    <button type="button">
+                                        <i class="ti ti-search icon"></i>
+                                    </button>
+                                </div>
+                                <input type="text" placeholder="Buscar Marca" />
+                            </div>
+                            <ul class="brand-list">
+                                <li class="brand">
+                                    <input id="honda-filter" type="checkbox" />
+                                    <label for="honda-filter">Honda</label>
+                                </li>
+                                <li class="brand">
+                                    <input id="honda-filter" type="checkbox" />
+                                    <label for="honda-filter">Honda</label>
+                                </li>
+                                <li class="brand">
+                                    <input id="chevrolet-filter" type="checkbox" />
+                                    <label for="chevrolet-filter">Chevrolet</label>
+                                </li>
+                                <li class="brand">
+                                    <input id="fiat-filter" type="checkbox" />
+                                    <label for="fiat-filter">Fiat</label>
+                                </li>
+                                <li class="brand">
+                                    <input id="ford-filter" type="checkbox" />
+                                    <label for="ford-filter">Ford</label>
+                                </li>
+                                <li class="brand">
+                                    <input id="toyota-filter" type="checkbox" />
+                                    <label for="toyota-filter">Toyota </label>
+                                </li>
+                            </ul>
+                            <button type="button" class="expand-brand-list-btn">Ver mais</button>
+                        </li>
+                        <li class="sidebar__filters__item sidebar__filters__item--type-filter">
+                            <p class="sidebar__filters__item__name">Tipos</p>
+                            <div class="sidebar__filters__item__content">
+                                <ul class="type-list">
+                                    <li class="type">
+                                        <input id="classic-type" type="checkbox" />
+                                        <label for="classic-type">Clássicos</label>
+                                    </li>
+                                    <li class="type">
+                                        <input id="old-type" type="checkbox" />
+                                        <label for="old-type">Antigos</label>
+                                    </li>
+                                    <li class="type">
+                                        <input id="modern-type" type="checkbox" />
+                                        <label for="modern-type">Modernos</label>
+                                    </li>
+                                    <li class="type">
+                                        <input id="sport-type" type="checkbox" />
+                                        <label for="sport-type">Esportivos</label>
+                                    </li>
+                                    <li class="type">
+                                        <input id="eletric-type" type="checkbox" />
+                                        <label for="eletric-type">Elétricos</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="products">
+                <div class="products__bar">
+                    <ul class="products__bar__options">
+                        <li class="products__bar__option products__bar__option--search-bar">
+                            <button><i class="ti ti-search icon"></i></button>
+                            <input type="text" placeholder="O que procura?" />
+                        </li>
+                        <li class="products__bar__option products__bar__option--filters">
+                            <button>
+                                <i class="ti ti-adjustments-horizontal icon"></i>
+                                <p>Filtros</p>
+                            </button>
+                        </li>
+                        <li class="products__bar__option products__bar__option--select-order">
+                            <i class="ti ti-arrows-down-up icon"></i>
+                            <select>
+                                <option selected>Mais Procurados</option>
+                                <option>Preço Crescente</option>
+                                <option>Preço Decrescente</option>
+                            </select>
+                        </li>
+                        <li class="products__bar__option products__bar__option--select-view">
+                            <i class="ti ti-eye icon"></i>
+                            <select>
+                                <option selected>20 por Página</option>
+                                <option>40 por Página</option>
+                                <option>60 por Página</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="products__grid">
+                    <!-- load-products.js -->
+                </div>
+            </main>
+        </div>
+        <div class="footer-wrapper">
+            <footer class="footer">
+                <ul class="footer__info-list">
+                    <li class="footer__info footer__info--categories">
+                        <p class="footer__info__title">Categorias</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="./cars.html">Carros</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="./components.html">Componentes</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="./tools.html">Ferramentas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--user">
+                        <p class="footer__info__title">Cliente</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="#">Minha Conta</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#">Meus Favoritos</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#">Meu Carrinho</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--contact">
+                        <p class="footer__info__title">Contato</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <i class="ti ti-brand-whatsapp icon"></i>
+                                <p>(xx) xxxx-xxxx</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--social-media">
+                        <p class="footer__info__title">Mídias Sociais</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-instagram icon"></i></a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-facebook icon"></i></a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-x icon"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__copyright">
+                    <small>© 2024-2024 Mario Carros. CNPJ: 00.000.000/0000-00 Todos os direitos reservados.</small>
+                </div>
+            </footer>
+        </div>
+        <!-- JS -->
+        <script type="module" type="text/javascript" src="../scripts/mobile-sidebar.js"></script>
+        <script type="module" type="text/javascript" src="../scripts/mobile-navigation.js"></script>
+        <script type="module" type="text/javascript" src="../scripts/products/cars/load-products.js"></script>
+    </body>
+</html>

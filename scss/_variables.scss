@@ -1,0 +1,23 @@
+:root {
+    // Colors
+    --base: 0 0% 98%;
+    --base-foreground: 240 4% 16%;
+
+    --base-2: 240 4% 16%;
+    --base-2-foreground: 0 0% 98%;
+
+    --primary: 349 86% 47%;
+    --primary-foreground: 0 0% 98%;
+
+    --border: 240 5% 85%;
+    --placeholder: 24, 5% 5%;
+
+    --transition-fn: cubic-bezier(0.3, 0.8, 0.5, 1);
+
+    // Telas
+    --screen-sm: 40rem;
+    --screen-md: 48rem;
+    --screen-lg: 64rem;
+    --screen-xl: 80rem;
+    --screen-xxl: 96rem;
+}

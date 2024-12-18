@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Website Icon -->
+        <link rel="icon" type="image/png" href="./assets/images/logo/icon.jpg" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tabler Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/index.css" />
+        <!-- Título -->
+        <title>Marios Carros</title>
+    </head>
+    <body>
+        <header class="navbar-wrapper">
+            <nav class="navbar">
+                <ul class="navbar__group-list">
+                    <li class="navbar__group">
+                        <a href="./index.html" class="navbar__logotipo">
+                            <img src="./assets/images/logotipo/icon.jpg" alt="Logo da Loja" />
+                            <p>Mario Carros</p>
+                        </a>
+                    </li>
+                    <li class="navbar__group">
+                        <ul class="navbar__category-list">
+                            <li class="navbar__category">
+                                <a href="./pages/cars.html">Carros</a>
+                            </li>
+                            <li class="navbar__category">
+                                <a href="./pages/components.html">Componentes</a>
+                            </li>
+                            <li class="navbar__category">
+                                <a href="./pages/tools.html">Ferramentas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__group">
+                        <ul class="navbar__action-list">
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Favoritos">
+                                    <i class="ti ti-heart icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Carrinho">
+                                    <i class="ti ti-shopping-cart icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Conta">
+                                    <i class="ti ti-user icon"></i>
+                                </div>
+                            </li>
+                            <li class="navbar__action">
+                                <div role="tooltip" class="tooltip tooltip--bottom" data-content="Contato">
+                                    <i class="ti ti-phone icon"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__group navbar__group--mobile">
+                        <button class="navbar__open-mobile-navigation-btn">
+                            <i class="ti ti-menu-2 icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div role="navigation" class="mobile-navigation">
+            <div class="mobile-navigation__header">
+                <div class="mobile-navigation__logotipo">
+                    <img src="./assets/images/logotipo/icon.jpg" alt="Logo da Loja" />
+                    <p>Mario Carros</p>
+                </div>
+                <button class="mobile-navigation__close-btn">
+                    <i class="ti ti-x icon"></i>
+                </button>
+            </div>
+            <ul class="mobile-navigation__section-list">
+                <li class="mobile-navigation__section">
+                    <p class="mobile-navigation__section__title">Categorias</p>
+                    <ul class="mobile-navigation__section__list">
+                        <li class="mobile-navigation__section__item">
+                            <a href="./pages/cars.html">
+                                <i class="ti ti-car icon"></i>
+                                Carros
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="./pages/components.html">
+                                <i class="ti ti-engine icon"></i>
+                                Componentes
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="./pages/tools.htm">
+                                <i class="ti ti-tool icon"></i>
+                                Ferramentas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-navigation__section">
+                    <p class="mobile-navigation__section__title">Cliente</p>
+                    <ul class="mobile-navigation__action-list">
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-heart icon"></i>
+                                Favoritos
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-shopping-cart icon"></i>
+                                Carrinho
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-user icon"></i>
+                                Conta
+                            </a>
+                        </li>
+                        <li class="mobile-navigation__section__item">
+                            <a href="#">
+                                <i class="ti ti-phone icon"></i>
+                                Contanto
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <main class="content">
+                <div class="content__introduction">
+                    <h1>Bem Vindo a Mario Carros!</h1>
+                    <p>Aqui sua necessidade é nossa especialidade :)</p>
+                </div>
+                <ul class="content__category-list">
+                    <li class="content__category">
+                        <div class="content__category__header">
+                            <div class="content__category__header__title">
+                                <i class="ti ti-car icon"></i>
+                                <h2>Carros</h2>
+                            </div>
+                            <button class="content__category__header__btn">Ver mais</button>
+                        </div>
+                        <ul class="content__category__card-grid">
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/classic_car.jpg"
+                                        alt="Carro Clássico"
+                                /></a>
+                                <p class="content__category__card__title">Carros Clássicos</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/sport_car.jpg"
+                                        alt="Carro Esportivo"
+                                /></a>
+                                <p class="content__category__card__title">Carros Esportivos</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/eletric_car.jpg"
+                                        alt="Carro Elétrico"
+                                /></a>
+                                <p class="content__category__card__title">Carros Elétricos</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__category">
+                        <div class="content__category__header">
+                            <div class="content__category__header__title">
+                                <i class="ti ti-engine icon"></i>
+                                <h2>Componentes</h2>
+                            </div>
+                            <button class="content__category__header__btn">Ver mais</button>
+                        </div>
+                        <ul class="content__category__card-grid">
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/car_engine.jpg"
+                                        alt="Motor de Carro"
+                                /></a>
+                                <p class="content__category__card__title">Motores</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#">
+                                    <img loading="lazy" src="./assets/images/cards/car_tires.jpg" alt="Pneu de Carro"
+                                /></a>
+                                <p class="content__category__card__title">Pneus</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/car_headlight.jpg"
+                                        alt="Farol de Carro"
+                                /></a>
+                                <p class="content__category__card__title">Faróis</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__category">
+                        <div class="content__category__header">
+                            <div class="content__category__header__title">
+                                <i class="ti ti-tool icon"></i>
+                                <h2>Ferramentas</h2>
+                            </div>
+                            <button class="content__category__header__btn">Ver mais</button>
+                        </div>
+                        <ul class="content__category__card-grid">
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/toolkit.jpg"
+                                        alt="Maleta de Ferramentas"
+                                /></a>
+                                <p class="content__category__card__title">Kits</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/compressor.jpg"
+                                        alt="Compressor de Ar"
+                                /></a>
+                                <p class="content__category__card__title">Compressores de Ar</p>
+                            </li>
+                            <li class="content__category__card">
+                                <a href="#"
+                                    ><img
+                                        loading="lazy"
+                                        src="./assets/images/cards/screwdriver.jpg"
+                                        alt="Parafusadeira"
+                                /></a>
+                                <p class="content__category__card__title">Parafusadeiras</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <div class="footer-wrapper">
+            <footer class="footer">
+                <ul class="footer__info-list">
+                    <li class="footer__info footer__info--categories">
+                        <p class="footer__info__title">Categorias</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="./pages/cars.html">Carros</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="./pages/components.html">Componentes</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="./pages/tools.html">Ferramentas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--user">
+                        <p class="footer__info__title">Cliente</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="#">Minha Conta</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#">Meus Favoritos</a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#">Meu Carrinho</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--contact">
+                        <p class="footer__info__title">Contato</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <i class="ti ti-brand-whatsapp icon"></i>
+                                <p>(xx) xxxx-xxxx</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__info footer__info--social-media">
+                        <p class="footer__info__title">Mídias Sociais</p>
+                        <ul class="footer__info__list">
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-instagram icon"></i></a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-facebook icon"></i></a>
+                            </li>
+                            <li class="footer__info__list__item">
+                                <a href="#"><i class="ti ti-brand-x icon"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__copyright">
+                    <small>© 2024-2024 Mario Carros. CNPJ: 00.000.000/0000-00 Todos os direitos reservados.</small>
+                </div>
+            </footer>
+        </div>
+        <!-- JS -->
+        <script type="module" src="./scripts/mobile-navigation.js"></script>
+    </body>
+</html>

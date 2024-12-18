@@ -1,0 +1,117 @@
+@use './utils' as *;
+
+.navbar-wrapper {
+    width: 100%;
+    color: hsl(var(--base-2-foreground));
+    background-color: hsl(var(--base-2));
+    @include flex($items: center, $content: center);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 99;
+
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    max-width: var(--screen-xxl);
+    padding: 0.5rem 1rem;
+
+    &__group-list {
+        width: 100%;
+        @include flex($items: center, $content: space-between);
+    }
+
+    &__group {
+        @include flex($items: center);
+
+        &--mobile {
+            @include min-screen(md) {
+                display: none;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: none;
+
+            @include min-screen(md) {
+                display: flex;
+            }
+        }
+    }
+
+    &__logotipo {
+        @include flex($items: center, $content: start, $gap: 0 0.75rem);
+
+        img {
+            @include size(3rem);
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+
+    &__category-list {
+        @include flex($items: center, $content: center, $gap: 0 1.5rem);
+    }
+
+    &__category {
+        display: inline-flex;
+        position: relative;
+
+        a {
+            font-weight: 600;
+
+            &::before {
+                content: '';
+                width: 100%;
+                border-bottom: 1px solid hsl(var(--border));
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                opacity: 0;
+                visibility: hidden;
+                transform-origin: center;
+                transform: scaleX(0);
+
+                transition: transform 0.3s var(--transition-fn),
+                    opacity 0.5s cubic-bezier(0.3, 0.8, 0.5, 1),
+                    visibility 0.5s var(--transition-fn);
+            }
+
+            &:hover::before {
+                opacity: 1;
+                transform: scaleX(1);
+                visibility: visible;
+            }
+        }
+    }
+
+    &__action-list {
+        @include flex($items: center, $content: end, $gap: 0 0.75rem);
+    }
+
+    &__action {
+        position: relative;
+        display: inline-flex;
+
+        .icon {
+            cursor: pointer;
+            font-size: 1.25rem;
+        }
+    }
+
+    &__open-mobile-navigation-btn {
+        cursor: pointer;
+
+        .icon {
+            font-size: 1.25rem;
+        }
+    }
+}
